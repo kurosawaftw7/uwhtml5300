@@ -2,7 +2,7 @@
   <div class="about">
     <h1>This is the movie poster page</h1>
   </div>
-  <div id="app">
+  <div>
     <!-- <figure v-for="movie in './src/assets/Seven_Samurai_poster.jpg'" :key="key">
       <img v-bind:src="movie.Poster">
       <figcaption>{{ movie.Poster }}</figcaption> -->
@@ -11,29 +11,24 @@
       </div>
         </div>
   
-  <div>
+  </template>
+  <script>
+  export default {
+    data() {
+      return {
+      //   movies: [
+      //     // {Title: 'The Seven Samurai', Poster: './src/assets/Seven_Samurai_poster.jpg'},
+      //     // {Title: 'Ran', Poster: './src/assets/Ran-Vintage-Movie-Poster-Original-Japanese-1-panel-20x29.jpg'},
+      //     // {Title: 'Ikiru', Poster: './src/assets/Ikiru_poster.jpg'},
+      // ] 
+      movies: [
+          {Title: 'The Seven Samurai', Poster: require('../assets/Seven_Samurai_poster.jpg')},
+          {Title: 'Ikiru', Poster: require('../assets/Ran-Vintage-Movie-Poster-Original-Japanese-1-panel-20x29.jpg')},
+          {Title: 'Ran', Poster: require('../assets/Ikiru_poster.jpg')},
+      ]
+      };
+    }
+  }
 
-    <script>
-export default {
-  data() {
-    return {
-    //   movies: [
-    //     // {Title: 'The Seven Samurai', Poster: './src/assets/Seven_Samurai_poster.jpg'},
-    //     // {Title: 'Ran', Poster: './src/assets/Ran-Vintage-Movie-Poster-Original-Japanese-1-panel-20x29.jpg'},
-    //     // {Title: 'Ikiru', Poster: './src/assets/Ikiru_poster.jpg'},
-    // ] 
-    movies: [
-        {Title: 'The Seven Samurai', Poster: require('../assets/Seven_Samurai_poster.jpg')},
-        {Title: 'Ikiru', Poster: require('../assets/Ran-Vintage-Movie-Poster-Original-Japanese-1-panel-20x29.jpg')},
-        {Title: 'Ran', Poster: require('../assets/Ikiru_poster.jpg')},
-    ]
-    };
-    };
-  },
-
-
-app.mount('#app')
 
 </script>
-  </div>
-</template>
