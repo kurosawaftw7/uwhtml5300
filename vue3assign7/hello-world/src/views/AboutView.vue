@@ -23,6 +23,14 @@
       };
     }
   }
-
-
 </script>
+
+<!-- CSS styling -->
+<style>
+img {
+  max-width: 400px;
+  height: auto;
+  padding: 2rem;
+}
+
+</style>
