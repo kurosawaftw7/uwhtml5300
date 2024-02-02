@@ -3,13 +3,19 @@
     <h1>This is the movie poster page</h1>
   </div>
   <div>
-    <!-- loop for  -->
+    <!-- loop for movie posters -->
       <div class="posters">
         <img v-for="(movie, key) in movies" :key=key :alt="movie.Title" :src="movie.Poster"/>
       </div>
         </div>
+      <!-- button code -->
+      <div>
+        <button @click="movies2('Kurosawa made amazing movies.')">Kurosawa made amazing movies.</button>
+        <button @click="movies2('I hate movies.')">I hate movies.</button>
+      </div>
   
   </template>
+
   <script>
   export default {
     data() {
@@ -22,6 +28,10 @@
       ]
       };
     }
+  }
+  // code for button function
+  function movies2(message) {
+    alert(message)
   }
 </script>
 
