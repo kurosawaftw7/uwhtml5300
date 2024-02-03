@@ -10,8 +10,10 @@
         </div>
       <!-- button code -->
       <div>
-        <button @click="movies2('Kurosawa made amazing movies.')">Kurosawa made amazing movies.</button>
-        <button @click="movies2('I hate movies.')">I hate movies.</button>
+        <button @click="movies2 = !movies2">Quality Toggle</button>
+
+        <h1 v-if="movies2">Kurosawa made great movies.</h1>
+        <h1 v-else>I hate good movies.</h1>
       </div>
   
   </template>
@@ -28,11 +30,12 @@
       ]
       };
     }
-  }
+  };
   // code for button function
-  function movies2(message) {
-    alert(message)
-  }
+  methods:{
+      function: (movies2);
+      alert (movies2);
+           }
 </script>
 
 <!-- CSS styling -->
