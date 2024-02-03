@@ -33,7 +33,7 @@
   };
   // code for button function
   methods:{
-      function: (movies2);
+      function movies2(message)
       alert (movies2);
            }
 </script>
