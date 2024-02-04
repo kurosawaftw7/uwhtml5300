@@ -12,8 +12,8 @@
       <div>
         <button @click="movies2 = !movies2">Quality Toggle</button>
 
-        <h1 v-if="movies2">Kurosawa made great movies.</h1>
-        <h1 v-else>I hate good movies.</h1>
+        <h2 v-if="movies2">Kurosawa made great movies.</h2>
+        <h2 v-else>I hate good movies.</h2>
       </div>
   
   </template>
@@ -28,14 +28,16 @@
           {Title: 'Ikiru', Poster: require('../assets/Ran-Vintage-Movie-Poster-Original-Japanese-1-panel-20x29.jpg')},
           {Title: 'Ran', Poster: require('../assets/Ikiru_poster.jpg')},
       ]
-      };
     }
-  };
+  },
   // code for button function
-  methods:{
-      function movies2(message)
+  methods: {
+      movies2 (message){
       alert (movies2);
-           }
+         }  
+       }
+     }
+           
 </script>
 
 <!-- CSS styling -->
