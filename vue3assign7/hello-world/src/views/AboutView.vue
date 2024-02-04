@@ -32,7 +32,7 @@
   },
   // code for button function
   methods: {
-      movies2 (message){
+    greet: function (movies2) {
       alert (movies2);
          }  
        }
