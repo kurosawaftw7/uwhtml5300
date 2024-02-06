@@ -8,6 +8,11 @@
         <img v-for="(movie, key) in movies" :key=key :alt="movie.Title" :src="movie.Poster"/>
       </div>
         </div>
+        <ImageComponent 
+          msg="testing"  
+          alt="alttext">
+        </ImageComponent>
+
       <!-- button code -->
       <div>
         <button @click="show = !show">{{buttontext}}</button>
@@ -18,6 +23,8 @@
   </template>
 
   <script>
+    import ImageComponent from '@/components/ImageComponent.vue';
+
   export default {
     data() {
       return {
@@ -30,6 +37,9 @@
     show: false, 
     buttontext: "quality toggle"
     }
+  },
+  components: {
+    ImageComponent
   },
   // code for button function
   methods: {
