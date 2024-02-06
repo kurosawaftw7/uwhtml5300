@@ -10,8 +10,8 @@
         </div>
       <!-- button code -->
       <div>
-        <button @click="movies2 = !movies2">Quality Toggle</button>
-        <h2 v-if="movies2">Kurosawa made great movies.</h2>
+        <button @click="show = !show">Quality Toggle</button>
+        <h2 v-if="show">Kurosawa made great movies.</h2>
         <h2 v-else>I hate good movies.</h2>
       </div>
   
@@ -26,7 +26,8 @@
           {Title: 'The Seven Samurai', Poster: require('../assets/Seven_Samurai_poster.jpg')},
           {Title: 'Ikiru', Poster: require('../assets/Ran-Vintage-Movie-Poster-Original-Japanese-1-panel-20x29.jpg')},
           {Title: 'Ran', Poster: require('../assets/Ikiru_poster.jpg')},
-      ]
+      ],
+    show: false
     }
   },
   // code for button function
