@@ -11,7 +11,6 @@
       <!-- button code -->
       <div>
         <button @click="movies2 = !movies2">Quality Toggle</button>
-
         <h2 v-if="movies2">Kurosawa made great movies.</h2>
         <h2 v-else>I hate good movies.</h2>
       </div>
