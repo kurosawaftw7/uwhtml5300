@@ -3,10 +3,12 @@
 <div class="accordion" id="accordionExample">
   <div class="accordion-item" v-for="(movie, key) in movies" :key="key">
     <h2 class="accordion-header">
+      <!-- accordion and movie title code -->
       <button class="accordion-button" type="button" data-bs-toggle="collapse" :data-bs-target="'#collapse' + key" aria-expanded="true" aria-controls="collapseOne">
         {{ movie.Title }}
       </button>
     </h2>
+    <!-- insert of array info -->
     <div :id="'collapse' + key" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body">
         {{ movie.Genre }}
@@ -22,6 +24,7 @@
 </template>
 
 <script>
+// array for movie info
 export default {
   data() {
     return {
