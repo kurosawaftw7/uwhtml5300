@@ -10,7 +10,7 @@
         </div>
       <!-- button code -->
       <div>
-        <button @click="show = !show">Quality Toggle</button>
+        <button @click="show = !show">{{buttontext}}</button>
         <h2 v-if="show">Kurosawa made great movies.</h2>
         <h2 v-else>I hate good movies.</h2>
       </div>
@@ -27,7 +27,8 @@
           {Title: 'Ikiru', Poster: require('../assets/Ran-Vintage-Movie-Poster-Original-Japanese-1-panel-20x29.jpg')},
           {Title: 'Ran', Poster: require('../assets/Ikiru_poster.jpg')},
       ],
-    show: false
+    show: false, 
+    buttontext: "quality toggle"
     }
   },
   // code for button function
