@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>{{msg}}</h1>
-        <img :alt="alt" :src="image">
+        <img :alt="alt" :src="image" :title="title">
     </div>
   </template>
   
@@ -12,7 +12,7 @@
       msg: String, 
       image: String,
       alt: String,
-
+      title: String,
     }
   }
   </script>

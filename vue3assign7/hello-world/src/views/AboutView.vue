@@ -12,7 +12,8 @@
           <ImageComponent 
             :msg="movie.Title"  
             :alt="movie.Title"
-            :image="movie.Poster">
+            :image="movie.Poster"
+            :title="movie.Title">
           </ImageComponent>
         </div>
 
