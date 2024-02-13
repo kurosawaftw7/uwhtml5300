@@ -35,8 +35,8 @@
       // array for images and titles
       movies: [
           {Title: 'The Seven Samurai', Poster: require('../assets/Seven_Samurai_poster.jpg')},
-          {Title: 'Ikiru', Poster: require('../assets/Ran-Vintage-Movie-Poster-Original-Japanese-1-panel-20x29.jpg')},
-          {Title: 'Ran', Poster: require('../assets/Ikiru_poster.jpg')},
+          {Title: 'Ran', Poster: require('../assets/Ran-Vintage-Movie-Poster-Original-Japanese-1-panel-20x29.jpg')},
+          {Title: 'Ikiru', Poster: require('../assets/Ikiru_poster.jpg')},
       ],
     show: false, 
     buttontext: "quality toggle"

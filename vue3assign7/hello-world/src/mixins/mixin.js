@@ -3,8 +3,15 @@
 // also, create a function that creates a toggle for the border,
 // for function, name must match
 
-function toggleBorder(){ //eslint-disable-line no-unused-vars
-    alert("toggleBorder")
+export default {
 
 
+   
+methods: {
+       
+toggleBorder() {
+           
+console.log('toggle border called!')
+        }
+    }
 }

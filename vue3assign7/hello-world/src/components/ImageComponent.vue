@@ -6,7 +6,7 @@
   </template>
   
   <script>
-  import mixin from "../mixins/mixin.js"
+  import toggleBorder from "../mixins/mixin.js"
 
   export default {
     name: 'ImageComponent',
@@ -16,7 +16,7 @@
       alt: String,
       title: String,
     },
-    mixins: [mixin]
+    mixins: [toggleBorder]
   }
   </script>
   
