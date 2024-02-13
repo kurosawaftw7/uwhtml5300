@@ -5,13 +5,16 @@
   <div>
     <!-- loop for movie posters -->
       <div class="posters">
-        <img v-for="(movie, key) in movies" :key=key :alt="movie.Title" :src="movie.Poster"/>
+        <!-- <img v-for="(movie, key) in movies" :key=key :alt="movie.Title" :src="movie.Poster"/> -->
       </div>
         </div>
-        <ImageComponent 
-          msg="testing"  
-          alt="alttext">
-        </ImageComponent>
+        <div v-for="(movie, key) in movies" :key=key>
+          <ImageComponent 
+            :msg="movie.Title"  
+            :alt="movie.Title"
+            :image="movie.Poster">
+          </ImageComponent>
+        </div>
 
       <!-- button code -->
       <div>
