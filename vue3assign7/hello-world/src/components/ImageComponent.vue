@@ -6,6 +6,8 @@
   </template>
   
   <script>
+  import mixin from "../mixins/mixin.js"
+
   export default {
     name: 'ImageComponent',
     props: {
@@ -13,7 +15,8 @@
       image: String,
       alt: String,
       title: String,
-    }
+    },
+    mixins: [mixin]
   }
   </script>
   
