@@ -18,6 +18,19 @@
     },
     mixins: [toggleBorder]
   }
+
+  const showHide = {
+    data() {
+      return {
+        isHidden: true
+      }
+    },
+    methods: {
+      toggleBorder() {
+        this.isHidden = !this.isHidden;
+      }
+    }
+  }
   </script>
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
