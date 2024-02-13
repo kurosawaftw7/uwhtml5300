@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>{{msg}}</h1>
-        <img :alt="alt" :src="image" :title="title">
+        <img :alt="alt" :src="image" :title="title" @click="toggleBorder()">
     </div>
   </template>
   
