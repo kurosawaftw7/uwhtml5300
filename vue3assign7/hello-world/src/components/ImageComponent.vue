@@ -19,10 +19,10 @@
     mixins: [toggleBorder]
   }
 
-  const showHide = {
+  const toggleBorder = {
     data() {
       return {
-        isHidden: true
+        isHidden: false
       }
     },
     methods: {

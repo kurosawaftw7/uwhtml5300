@@ -5,13 +5,13 @@
 
 export default {
 
-
-   
-methods: {
-       
-toggleBorder() {
-           
-console.log('toggle border called!')
-        }
-    }
+function toggleBorder(el) {
+    el.classList.add("selected")
+    }    
 }
+// toggleBorder() {
+           
+// console.log('toggle border called!')
+//         }
+//     }
+// }
