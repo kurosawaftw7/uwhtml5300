@@ -5,10 +5,12 @@
 
 export default {
 
-function toggleBorder(el) {
-    el.classList.add("selected")
-    }    
+let toggleBorder = document.querySelector('.image-border'),
+    classList.toggle('image-border') {
+        console.log('it just works')
+    }
 }
+
 // toggleBorder() {
            
 // console.log('toggle border called!')
