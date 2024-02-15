@@ -5,10 +5,9 @@
 
 export default {
 
-let toggleBorder = document.querySelector('.image-border'),
-    classList.toggle('image-border') {
-        console.log('it just works')
-    }
+let  = @click="toggleBorder(el)";
+    classList.toggle('image-border')
+    
 }
 
 // toggleBorder() {
