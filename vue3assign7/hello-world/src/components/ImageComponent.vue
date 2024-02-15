@@ -1,5 +1,6 @@
 <template>
     <div>
+      <!-- HTML and image code -->
         <h1>{{msg}}</h1>
         <img :alt="alt" :src="image" :title="title" @click="toggleBorder()">
     </div>
@@ -7,7 +8,7 @@
   
   <script>
   import toggleBorder from "../mixins/mixin.js"
-
+// JS creating the mixin
   export default {
     name: 'ImageComponent',
     props: {
@@ -18,7 +19,7 @@
     },
     mixins: [toggleBorder]
   }
-
+// border toggle code
   const toggleBorder = {
     data() {
       return {
