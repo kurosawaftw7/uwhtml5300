@@ -5,8 +5,8 @@
 
 export 
 
-const image-border, @click = "toggleBorder(.image-border)";
-    toggleBorder.onclick = function('image-border') {
+const image-border, @click = toggleBorder('.image-border');
+    toggleBorder.onclick = function('.image-border') {
         toggleBorder.classList.toggle('active');
     }
 
