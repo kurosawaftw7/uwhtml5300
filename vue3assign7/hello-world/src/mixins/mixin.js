@@ -3,12 +3,13 @@
 // also, create a function that creates a toggle for the border,
 // for function, name must match
 
-export default {
+export 
 
-let  = @click="toggleBorder(el)";
-    classList.toggle('image-border')
-    
-}
+const image-border, @click = "toggleBorder(.image-border)";
+    toggleBorder.onclick = function('image-border') {
+        toggleBorder.classList.toggle('active');
+    }
+
 
 // toggleBorder() {
            
