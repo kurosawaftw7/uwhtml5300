@@ -7,7 +7,7 @@ export
 
 const ImageComponent = toggleBorder('.image-border');
     toggleBorder.onclick = function(ImageComponent) {
-        toggleBorder.classList.toggle('active');
+        ImageComponent.classList.toggle('active');
     }
 
 
