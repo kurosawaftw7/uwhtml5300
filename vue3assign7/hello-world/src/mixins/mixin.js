@@ -3,12 +3,13 @@
 // also, create a function that creates a toggle for the border,
 // for function, name must match
 
-export 
 
-const ImageComponent = toggleBorder('.image-border');
-    toggleBorder.onclick = function(ImageComponent) {
-        ImageComponent.classList.toggle('active');
-    }
+const ImageComponent = document.querySelector('.image-border');
+
+    toggleBorder.addEventListener('click', () => {
+        toggleBorder.classList.toggle()
+        })
+        
 
 
 // toggleBorder() {
