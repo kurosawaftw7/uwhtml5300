@@ -4,11 +4,16 @@
 // for function, name must match
 
 
-const ImageComponent = document.querySelector('.image-border');
-
-    toggleBorder.addEventListener('click', () => {
-        toggleBorder.classList.toggle()
-        })
+export default {
+   
+methods: {
+       
+toggleBorder(el) {      
+           
+el.classList.toggle('image-border')
+        }
+    }
+}
         
 
 
