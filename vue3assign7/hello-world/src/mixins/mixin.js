@@ -6,10 +6,8 @@
 
 export default {
    
-methods: {
-       
-toggleBorder(el) {      
-           
+methods: {       
+toggleBorder(el) {          
 el.classList.toggle('image-border')
         }
     }
